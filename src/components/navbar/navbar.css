@@ -1,0 +1,29 @@
+.navbar {
+  padding: 20px;
+  background-color: var(--grey-color);
+}
+
+.brand {
+  width: 150px;
+  cursor: pointer;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links ul {
+  list-style: none;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+}
+
+.links-list {
+  display: flex;
+  gap: 20px;
+}
