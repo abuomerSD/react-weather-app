@@ -2,6 +2,7 @@ import React from "react";
 import "./current-weather.css";
 import { useContext } from "react";
 import { Context } from "../../context";
+import dayjs from "dayjs";
 
 const CurrentWeather = () => {
   const { weatherData, setWeatherData } = useContext(Context);
@@ -20,8 +21,14 @@ const CurrentWeather = () => {
               <h1>{weatherData.temp}°C</h1>
             </div>
           </div>
-          <div className="row">
-            <div className="rounded-col"></div>
+          <div className="card-down-row">
+            {weatherData.forecastData.map((item, index) => (
+              <div className="rounded-col">
+                <h4>{new Date(item.dt * 1000).getHours()}</h4>
+                <img src={`/images/icons/${item.icon}.png`} alt="" />
+                <h5>{Math.floor(item.temp)}°C</h5>
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -53,13 +53,31 @@ const SearchInput = () => {
     const current = currentWeatherResponse.data;
     const forecast = forecastWeatherResponse.data;
 
+    const now = Date.now() / 1000;
+    const forecastData = [];
+
+    // adding forcast data to state obj
+
+    let index = 1;
+    forecast.list.forEach((item) => {
+      if (item.dt > now && index <= 5) {
+        forecastData.push({
+          dt: item.dt,
+          temp: item.main.temp,
+          icon: item.weather[0].icon,
+        });
+        index++;
+      }
+    });
+
+    console.log("forecastData", forecastData);
+
     const obj = {
-      current,
-      forecast,
       city: current.name,
       temp: Math.floor(current.main.temp),
       description: current.weather[0].description,
       icon: current.weather[0].icon,
+      forecastData,
     };
 
     console.log("obj", obj);
