@@ -2,10 +2,10 @@ import React from "react";
 import "./current-weather.css";
 import { useContext } from "react";
 import { Context } from "../../context";
-import dayjs from "dayjs";
+// import dayjs from "dayjs";
 
 const CurrentWeather = () => {
-  const { weatherData, setWeatherData } = useContext(Context);
+  const { weatherData } = useContext(Context);
 
   return (
     <>

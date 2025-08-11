@@ -26,7 +26,7 @@ const SearchInput = () => {
   const search = async (e) => {
     try {
       const query = e.query;
-
+      console.log("weather data", weatherData);
       const response = await axios.request({
         ...options,
         params: { namePrefix: query },
