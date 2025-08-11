@@ -1,6 +1,6 @@
 .current-weather-card {
   width: 400px;
-  height: 300px;
+  height: 310px;
   background-color: #1b3c53;
   padding: 20px;
   border-radius: 20px;
@@ -79,4 +79,19 @@
   font-weight: 800;
   font-size: 15px;
   margin-top: 5px;
+}
+
+@media (max-width: 500px) {
+  .current-weather-card {
+    width: 300px;
+    height: 350px;
+  }
+
+  .current-weather-card .row {
+    gap: 10px;
+  }
+
+  .current-weather-card .card-down-row .rounded-col {
+    width: 30px;
+  }
 }

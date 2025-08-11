@@ -1,6 +1,7 @@
 .navbar {
   padding: 20px;
-  background-color: var(--grey-color);
+  /* background-color: var(--grey-color); */
+  background-color: #465c88;
 }
 
 .brand {
@@ -10,7 +11,7 @@
 
 .nav-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
