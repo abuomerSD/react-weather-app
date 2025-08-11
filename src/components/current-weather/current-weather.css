@@ -10,6 +10,7 @@
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .current-weather-card .row {
@@ -35,6 +36,11 @@
 .current-weather-card h3 {
   color: #eee;
   margin-left: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-width: 180px;
 }
 
 .current-weather-card h1 {
@@ -48,6 +54,11 @@
   color: #eee;
   font-weight: 800;
   font-size: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-width: 180px;
 }
 
 .current-weather-card .card-down-row .rounded-col {
@@ -72,7 +83,7 @@
 
 .rounded-col h4 {
   font-weight: 800;
-  font-size: 30px;
+  font-size: 15px;
 }
 
 .rounded-col h5 {
