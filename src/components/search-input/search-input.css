@@ -1,6 +1,6 @@
 .search-input {
   width: 300px;
-  margin: 20px auto;
+  margin: 20px auto 5px;
 }
 
 .search-row {
@@ -34,3 +34,30 @@
 .p-autocomplete-items .p-autocomplete-item:hover {
   margin-left: 10px;
 }
+
+.btn-search-row {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-search {
+  color: #eee;
+  background-color: #465c88;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border: 1px solid black;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.btn-search:hover {
+  background-color: #113f67;
+  cursor: pointer;
+}
+
+/* .toast {
+  color: #eee;
+  background-color: red;
+  padding: 20px;
+} */

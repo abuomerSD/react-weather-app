@@ -83,7 +83,7 @@
 
 @media (max-width: 500px) {
   .current-weather-card {
-    width: 300px;
+    width: 400px;
     height: 350px;
   }
 
@@ -92,6 +92,6 @@
   }
 
   .current-weather-card .card-down-row .rounded-col {
-    width: 30px;
+    width: 50px;
   }
 }
